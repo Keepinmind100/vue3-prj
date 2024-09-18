@@ -47,6 +47,7 @@
 import PostItem from '@/components/posts/PostItem.vue';
 import PostDetailView from '@/views/posts/PostDetailView.vue';
 import PostFilter from '@/components/posts/PostFilter.vue';
+import PostModal from '@/components/posts/PostModal.vue';
 import { getPosts } from '@/api/posts';
 import { ref, watchEffect } from 'vue';
 import { useRouter } from 'vue-router';

@@ -29,6 +29,7 @@
 import { ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { getPostById, updatePost } from '@/api/posts';
+import PostForm from '@/components/posts/PostForm.vue';
 
 const route = useRoute();
 const router = useRouter();
