@@ -12,7 +12,7 @@ module.exports = {
 		'vue/setup-compiler-macros': true,
 	},
 	parserOptions: {
-		ecmaVersion: '2022',
+		ecmaVersion: '2020',
 		sourceType: 'module',
 	},
 	rules: {
@@ -29,6 +29,7 @@ module.exports = {
 				printWidth: 80,
 				bracketSpacing: true,
 				arrowParens: 'avoid',
+				endOfLine: 'auto',
 			},
 		],
 	},

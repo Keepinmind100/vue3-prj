@@ -16,6 +16,7 @@ export function createPost(data) {
 // 	return posts.put(`/${id}`, data);
 // }
 
+// 일부 수정시에는 patch 를 사용 , 전체 수정시 put 으로 수정
 export function updatePost(id, data) {
 	return posts.patch(`/${id}`, data);
 }
