@@ -9,6 +9,7 @@ export const useCounterStore = defineStore('counter', {
 		doubleCountPlusOne() {
 			return this.doubleCount + 1;
 		},
+		tripleCount: state => state.counter * 5,
 	},
 	actions: {
 		increment() {

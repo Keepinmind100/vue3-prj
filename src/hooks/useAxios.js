@@ -27,6 +27,7 @@ export const useAxios = (url, config = {}, options = {}) => {
 		data.value = null;
 		error.value = null;
 		loading.value = true;
+
 		axios(unref(url), {
 			...defaultConfig,
 			...config,
@@ -50,6 +51,8 @@ export const useAxios = (url, config = {}, options = {}) => {
 				loading.value = false;
 			});
 	};
+
+	// 반응형 or 객체형 / 반응형 watch 객체는 execute
 	if (isRef(params) || isRef(url)) {
 		watchEffect(execute);
 	} else {

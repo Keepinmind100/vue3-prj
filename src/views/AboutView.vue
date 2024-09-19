@@ -9,6 +9,7 @@
 		<p>counter: {{ counter }}</p>
 		<p>doubleCount: {{ doubleCount }}</p>
 		<p>doubleCountPlusOne: {{ doubleCountPlusOne }}</p>
+		<p>tripleCount: {{ tripleCount }}</p>
 		<button @click="increment()">Click!!</button>
 	</div>
 </template>
@@ -23,9 +24,10 @@ console.log('route.path: ', route.path);
 
 const store = useCounterStore();
 
-const { counter, doubleCount, doubleCountPlusOne } = storeToRefs(store);
+const { counter, doubleCount, doubleCountPlusOne, tripleCount } =
+	storeToRefs(store);
 const { increment } = store;
-counter.value = 100;
+counter.value = 1;
 // increment();
 // increment();
 // increment();

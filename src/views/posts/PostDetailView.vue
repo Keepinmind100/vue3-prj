@@ -70,6 +70,8 @@ const router = useRouter();
 const { id: idRef } = toRefs(props);
 const { isOdd } = useNumber(idRef);
 const { vAlert, vSuccess } = useAlert();
+
+// 반응형 데이터로 넣어줌.
 const url = computed(() => `/posts/${props.id}`);
 const { error, loading, data: post } = useAxios(url);
 
